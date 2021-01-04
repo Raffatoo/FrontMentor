@@ -1,0 +1,76 @@
+/* seudoselectores  */
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+body{
+  margin: 0;
+  background-color: var(--dark-cyan);
+  background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: left -30% top 90%, right -20% bottom 200%;
+  color: var(--very-dark-desaturated-blue);
+  padding: 50px;
+  font-family: 'Kumbh Sans', sans-serif;
+  display: flex;
+  justify-content:center;
+}
+h1{
+  font-size: 25px;
+  color: var(--very-dark-desaturated-blue);
+  margin: 0;
+  margin-top: 20px;
+}
+h1 span{
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  margin-left: 5px;
+}
+h2{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  font-size: 20px
+}
+
+h4{
+  color: var(--dark-grayish-blue)
+}
+
+.card {
+  background: white url('./images/bg-pattern-card.svg') repeat-x;
+  padding-top: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 375px;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+.image{
+  border-radius: 50%;
+  border: 8px solid white;
+}
+/* cuando quieres pasarles las propiedadesa todos los elementos internos */
+/* .social > *{ } */ 
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 0;
+}
+.social h3 {
+  font-size: 22px;
+}
+
+.social h3 small {
+  font-size: 15px;
+  margin-top: 8px;
+  display: block;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  letter-spacing: 1px;
+}
