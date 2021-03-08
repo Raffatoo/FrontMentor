@@ -85,6 +85,19 @@ nav .menuRight img{
   width: 14px;
 }
 
+.btn-google {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.btn-google .btn{
+  width: 220px;
+  height: 30px;
+  font-size: 1em;
+  border-radius: 6px;
+}
+
+
 .footer {
   display: block;
   width: 100%;
@@ -126,4 +139,4 @@ nav .menuRight img{
   text-decoration: none;
   color: gray;
   padding: 6px;
-} */
+}
