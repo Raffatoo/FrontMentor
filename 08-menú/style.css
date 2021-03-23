@@ -1,0 +1,177 @@
+body {
+  background-color: rgb(255, 131, 109);
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'IBM Plex Serif', serif;
+  margin: 0;
+}
+
+.contenedor {
+  background-color: white;
+  min-height: calc(100vh - 20px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 0 30px;
+}
+
+nav {
+  background-color: #3F51B5;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 20px;
+}
+
+nav ul li:hover {
+  background-color: #1a2770;
+}
+
+nav ul a {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+/* Menu Sencillo */
+.sencillo ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.sencillo ul li {
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
+
+@media screen and (min-width: 768px){
+  .sencillo ul {
+    flex-direction: row;
+  }
+}
+
+/* Menu Iconos */
+.iconos ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconos ul li a {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.textoLink {
+  padding: .2rem .6rem;
+}
+
+.textoLink span {
+  display: block;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 768px){
+  .iconos ul {
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+  }
+  .iconos ul {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .iconos ul {
+    flex: 1 0 100%;
+    justify-content: start;
+  }
+
+}
+
+/* Menu Dropdown */
+
+.dropdown ul {
+  display: flex;
+}
+
+.dropdown ul li {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  flex: 1 1 100%;
+}
+
+.dropdown ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(255, 108, 92);
+}
+
+.dropdown ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px){
+
+  .dropdown ul {
+    flex-direction: column;
+  }
+
+}
+
+/* Menu Social */
+.sociales ul li span {
+  display: none;
+}
+
+.sociales ul {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.sociales ul li a:before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+  content: "\f39e";
+}
+.sociales ul li a[href*='twitter.com']::before {
+  content: "\f099";
+}
+.sociales ul li a[href*='youtube.com']::before {
+  content: "\f167";
+}
+.sociales ul li a[href*='instagram.com']::before {
+  content: "\f16d";
+}
+.sociales ul li a[href*='pinterest.com']::before {
+  content: "\f231";
+}
+
+/* Menu Navegacion-social-dropdown */
+
+.navegacion-social-dropdown {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3F51B5;
+}
+
+.navegacion-social-dropdown .dropdown ul{
+  justify-content: left;
+  border: 1px solid red;
+}
